@@ -1,0 +1,22 @@
+body{
+    background: antiquewhite;
+}
+
+.hidden-section{
+    display: none;
+}
+
+.show-section{
+    display: block !important;
+}
+
+.MainFlyout__levelImg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 410px;
+    z-index: 30;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
