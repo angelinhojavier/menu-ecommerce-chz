@@ -9,13 +9,10 @@
   <meta name="description" content="Home Depot Menu By Angelinhojavier">
   <meta name="author" content="SitePoint">  
 
-  <link rel="stylesheet" href="/headerfooter-web.css">
-  <link rel="stylesheet" href="/custom.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="/main.js"></script>
-  <!-- <script src="/headerfooter-web.js"></script> -->
-  <!-- <script src="/data-collection.js"></script> -->
-  
+  <link rel="stylesheet" href="/css/headerfooter-web.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <script src="/lib/jquery.min.js"></script> 
+  <script src="/lib/main.js"></script>  
 
 </head>
 
@@ -30,54 +27,9 @@
             >All Departments</a
             >
         </li>
-        <li class="ShoppingLinks__item">
-            <a
-            data-id="homeDecorFurniture"
-            class="ShoppingLinks__link js__flyout--open"
-            href="//www.homedepot.com/b/Home-Decor/N-5yc1vZas6p?cm_sp=d-flyout-Decor_and_Furniture"
-            >Home Decor, Furniture &amp; Kitchenware</a
-            >
-        </li>
-        <li class="ShoppingLinks__item">
-            <a
-            data-id="diyProjectsIdeas"
-            class="ShoppingLinks__link"
-            href="//www.homedepot.com/c/diy_projects_and_ideas"
-            >DIY Projects &amp; Ideas</a
-            >
-        </li>
-        <li class="ShoppingLinks__item">
-            <a
-            class="ShoppingLinks__link"
-            href="//www.homedepot.com/c/project_calculators"
-            >Project Calculators</a
-            >
-        </li>
-        <li class="ShoppingLinks__item">
-            <a
-            data-id="homeServices"
-            class="ShoppingLinks__link"
-            href="//www.homedepot.com/services/?vfrom=global-menu"
-            >Installation &amp; Services</a
-            >
-        </li>
-        <li class="ShoppingLinks__item">
-            <a
-            data-id="specialOffers"
-            class="ShoppingLinks__link"
-            href="//www.homedepot.com/c/Savings_Center"
-            >Specials &amp; Offers</a
-            >
-        </li>
-        <li class="ShoppingLinks__item">
-            <a class="ShoppingLinks__link" href="//www.homedepot.com/c/localad"
-            >Local Ad &amp; Catalog</a
-            >
-        </li>
     </ul>
 
-    <div class="grid isBound flush">
-        <div id="allDepartmentsFlyout" class="MainFlyout MainFlyout--open MainFlyout--panels-4">
+   <div id="allDepartmentsFlyout" class="MainFlyout MainFlyout--open MainFlyout--panels-4">
 
             <!-- 1er NIVEL -->
             <section class="MainFlyout__level1 section-ag hidden-section">
@@ -112,6 +64,7 @@
             <section class="MainFlyout__level2 section-ag hidden-section">
                <div class="MainFlyout__wrapper MainFlyout__wrapper--border hidden-section lv2 lv2-1">
                   <header><a href="//www.homedepot.com/b/Appliances/N-5yc1vZbv1w?cm_sp=d-flyout-Appliances" class="MainFlyout__header">Appliances</a></header>
+                  <hr>
                   <ul class="MainFlyout__list">
                      <li onmouseover="showMenuLevel3(this, 'lv3-1')" class="MainFlyout__item has-child-ag"><a href="//www.homedepot.com/c/Appliance_Savings" class="MainFlyout__link" title="Appliance Special Buys">Appliance Special Buys</a></li>
                      <li onmouseover="showMenuLevel3(this, 'lv3-2')" class="MainFlyout__item has-child-ag"><a href="//www.homedepot.com/b/Appliances-Refrigerators/N-5yc1vZc3pi" class="MainFlyout__link" title="Refrigerators">Refrigerators</a></li>
@@ -151,6 +104,7 @@
             <section class="MainFlyout__level3 section-ag hidden-section">
                <div class="MainFlyout__wrapper MainFlyout__wrapper--border hidden-section lv3 lv3-1">
                   <header><a href="//www.homedepot.com/b/Appliances-Wall-Ovens/N-5yc1vZc3nq" class="MainFlyout__header">Wall Ovens</a></header>
+                  <hr>
                   <ul class="MainFlyout__list">
                      <li class="MainFlyout__item"><a href="//www.homedepot.com/b/Appliances-Wall-Ovens-Electric-Wall-Ovens-Single-Electric-Wall-Ovens/N-5yc1vZc3pm" class="MainFlyout__link" title="Single Wall Ovens" data-type="direct">Single Wall Ovens</a></li>
                      <li class="MainFlyout__item"><a href="//www.homedepot.com/b/Appliances-Wall-Ovens-Electric-Wall-Ovens-Double-Electric-Wall-Ovens/N-5yc1vZc3ow" class="MainFlyout__link" title="Double Wall Ovens" data-type="direct">Double Wall Ovens</a></li>
@@ -165,6 +119,7 @@
 
                <div class="MainFlyout__wrapper MainFlyout__wrapper--border hidden-section lv3 lv3-2">
                   <header><a href="//www.homedepot.com/b/Appliances-Wall-Ovens/N-5yc1vZc3nq" class="MainFlyout__header">PAREDES</a></header>
+                  <hr>
                   <ul class="MainFlyout__list">
                      <li class="MainFlyout__item"><a href="//www.homedepot.com/b/Appliances-Wall-Ovens-Electric-Wall-Ovens-Single-Electric-Wall-Ovens/N-5yc1vZc3pm" class="MainFlyout__link" title="Single Wall Ovens" data-type="direct">Cemento Duro</a></li>
                      <li class="MainFlyout__item"><a href="//www.homedepot.com/b/Appliances-Wall-Ovens-Electric-Wall-Ovens-Double-Electric-Wall-Ovens/N-5yc1vZc3ow" class="MainFlyout__link" title="Double Wall Ovens" data-type="direct">Cemento para ríos</a></li>
@@ -193,9 +148,7 @@
                <div class="MainFlyout__wrapper"><span class="MainFlyout__detailsHeader">Appliance Special Buys</span><a href="//www.homedepot.com/c/Appliance_Savings" class="bttn-outline bttn--cta bttn--force-left"><span class="bttn__content">Shop Now</span></a></div>
             </section>
 
-         </div>
-    </div>
-
+   </div>
     
 </body>
 </html>
