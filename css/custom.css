@@ -2,7 +2,7 @@
 body {
   background: #f1f1f1;
   font-family: "helvetica-neue", Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
   color: #333;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -13,6 +13,7 @@ a {
   font-style: inherit;
   color: inherit;
   cursor: pointer;
+
 }
 /* ----------------------------- */
 
@@ -252,9 +253,64 @@ input.bttn--cta {
 }
 
 .MainFlyout__detailsHeader {
-    font-size: 4.4rem;
+    font-size: 2.4rem;
+}
+
+.ShoppingLinks {
+  overflow: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ShoppingLinks__item {
+  flex-grow: 1;
+  margin-right: 11px;
+  height: 47px;
+  float: left;
+}
+
+.ShoppingLinks__link--force-open, .footer__trademark {
+  font-family: "helvetica-neue-bold", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .ShoppingLinks__link:before {
     background-color: #0066ff;
+}
+
+.ShoppingLinks__link {
+  display: inline-block;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.ShoppingLinks__link a {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.ShoppingLinks__link--force-open:before {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.ShoppingLinks__link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  -webkit-transition: width 300ms ease;
+  -moz-transition: width 300ms ease;
+  -ms-transition: width 300ms ease;
+  -o-transition: width 300ms ease;
+  transition: width 300ms ease;
 }
